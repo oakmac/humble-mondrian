@@ -12,6 +12,10 @@ This project originally adapted from [humble-deck].
 [HumbleUI]:https://github.com/HumbleUI/HumbleUI
 [humble-deck]:https://github.com/tonsky/humble-deck
 
+## Screenshot
+
+<img src="images/humble-mondrian.png">
+
 ## Development
 
 ```sh
