@@ -35,11 +35,11 @@
     (ui/gap 0 inner-padding)
     [:stretch 8 (ui/row
                   [:stretch 9 (ui/column
-                                [:stretch 1 (Box white)]
+                                [:stretch 2 (Box white)]
                                 (ui/gap 0 inner-padding)
-                                [:stretch 1 (Box white)]
+                                [:stretch 3 (Box white)]
                                 (ui/gap 0 inner-padding)
-                                [:stretch 1 (Box yellow)])]
+                                [:stretch 3 (Box yellow)])]
                   (ui/gap inner-padding 0)
                   [:stretch 27 (ui/column
                                  [:stretch 1 (Box red)]
