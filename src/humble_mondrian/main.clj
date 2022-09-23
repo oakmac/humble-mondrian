@@ -59,11 +59,21 @@
                                                   (ui/gap 0 inner-padding)
                                                   [:stretch 1 (Box black)]
                                                   (ui/gap 0 inner-padding)
+                                                  ;; "cheat" here and create two boxes, the second of which
+                                                  ;; gets pushed down below it's container.
+                                                  ;; If you do not do this, then there is sometimes a one-pixel bug
+                                                  ;; between these boxes and their continuation below.
                                                   [:stretch 1
                                                     (ui/row
-                                                      [:stretch 1 (Box yellow)]
+                                                      [:stretch 1
+                                                        (ui/stack
+                                                         (Box yellow)
+                                                         (ui/valign 0.1 1 (Box yellow)))]
                                                       (ui/gap inner-padding 0)
-                                                      [:stretch 1 (Box white)])])])])])]
+                                                      [:stretch 1
+                                                        (ui/stack
+                                                         (Box white)
+                                                         (ui/valign 0.1 1 (Box white)))])])])])])]
     (ui/row
       [:stretch 9 (Box dark-grey)]
       (ui/gap inner-padding 0)
