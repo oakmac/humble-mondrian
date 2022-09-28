@@ -223,8 +223,9 @@
 (redraw)
 
 (defn -main [& args]
-  (reset! *window
-    (ui/start-app!
-      {:title    "HumbleUI Mondrian"
-       :bg-color 0xFFFFFFFF}
-      #'MondrianApp)))
+  (ui/start-app!
+    (reset! *window
+      (ui/window
+        {:title    "HumbleUI Mondrian"
+         :bg-color 0xFFFFFFFF}
+        #'MondrianApp))))
