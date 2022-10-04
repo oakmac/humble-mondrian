@@ -18,6 +18,8 @@ This project originally adapted from [humble-deck].
 
 ## Development
 
+Make sure that [Clojure v1.11.1](https://clojure.org/releases/downloads) is installed, then:
+
 ```sh
 ## run the program
 ./script/run.sh
